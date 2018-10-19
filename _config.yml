@@ -1,0 +1,34 @@
+# Site settings
+title: villetorhonen
+realname: Ville Törhönen
+
+email: ville that-at-sign torhonen.fi
+description: It's not dead, it's just /dev/null 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://vtorhonen.github.io" # the base hostname & protocol for your site
+twitter_username: vtorhonen
+github_username:  vtorhonen
+linkedin_username: vtorhonen
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-feed
+
+#pages_list:
+#    About: '/about'
+footer-links:
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github: vtorhonen
+  instagram: villetorhonen
+  linkedin: vtorhonen
+  pinterest:
+  rss: foo # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: vtorhonen
+  stackoverflow: users/400125/vtorhonen # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
