@@ -8,6 +8,13 @@ permalink: /projects/
 
 Project on Github: [vtorhonen/lightning-node-ansible](https://github.com/vtorhonen/lightning-node-ansible).
 
+# Getting started with Vault
+
+[Vault](https://vaultproject.io) solves the problem of secrets management and secure introduction in
+a really neat way. My project [vtorhonen/hashistack-pki](https://github.com/vtorhonen/hashistack-pki)
+introduces how Hashicorp's tools fit together and how you can utilize internal TLS certificates
+easily within your own infrastructure.
+
 # Single Page Web Server
 
 Yes, single-page applications are very _trendy_ these days. But why stop there?
