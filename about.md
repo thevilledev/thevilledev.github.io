@@ -6,7 +6,6 @@ permalink: /about/
 
 Hey you. This is me:
 
-* Works as a Senior Backend Programmer at [Redhill Games](https://www.redhillgames.com/).
 * MSc in Computer Science, majored in Communications Engineering
 and Protocols at [Tampere University of Technology](http://www.tut.fi/en/).
 * Used to love Python. Loves Go nowadays.
