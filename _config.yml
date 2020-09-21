@@ -5,7 +5,7 @@ realname: Ville Törhönen
 email: ville that-at-sign torhonen.fi
 description: It's not dead, it's just /dev/null 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://vtorhonen.github.io" # the base hostname & protocol for your site
+url: "https://ville.dev" # the base hostname & protocol for your site
 twitter_username: vtorhonen
 github_username:  vtorhonen
 linkedin_username: vtorhonen
