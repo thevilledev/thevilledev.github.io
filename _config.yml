@@ -3,7 +3,7 @@ title: ville.dev
 realname: Ville Törhönen
 
 email: ville that-at-sign torhonen.fi
-description: It's not dead, it's just /dev/null 
+description: a website 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://ville.dev" # the base hostname & protocol for your site
 twitter_username: thevilledev
