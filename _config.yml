@@ -1,8 +1,8 @@
 # Site settings
 title: ville.dev
-realname: Ville Törhönen
+realname: Ville Vesilehto
 
-email: ville that-at-sign torhonen.fi
+email: simplelogin.uv5vn that-at-sign simplelogin.com
 description: a website 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://ville.dev" # the base hostname & protocol for your site
