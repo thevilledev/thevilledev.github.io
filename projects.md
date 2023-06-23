@@ -4,14 +4,18 @@ title: Projects
 permalink: /projects/
 ---
 
+# Open source
+
+Whenever I have the time I contribute to Github projects I personally use and like. Very often a HashiCorp repository.
+
 # Automated deployments for Bitcoin Lightning network nodes
 
-Project on Github: [vtorhonen/lightning-node-ansible](https://github.com/vtorhonen/lightning-node-ansible).
+Project on Github: [thevilledev/lightning-node-ansible](https://github.com/thevilledev/lightning-node-ansible).
 
 # Getting started with Vault
 
 [Vault](https://vaultproject.io) solves the problem of secrets management and secure introduction in
-a really neat way. My project [vtorhonen/hashistack-pki](https://github.com/vtorhonen/hashistack-pki)
+a really neat way. My project [thevilledev/hashistack-pki](https://github.com/thevilledev/hashistack-pki)
 introduces how Hashicorp's tools fit together and how you can utilize internal TLS certificates
 easily within your own infrastructure.
 
@@ -25,14 +29,10 @@ returns the same content.
 
 It's HTTP 1.0 really. It's not very sophisticated either, but I had fun while making this.
 
-Project on Github: [vtorhonen/single-page-web-server](https://github.com/vtorhonen/single-page-web-server).
+Project on Github: [thevilledev/single-page-web-server](https://github.com/thevilledev/single-page-web-server).
 
 # Project Euler
 
 [Project Euler](http://projecteuler.net/) presents math problems which can be solved programmatically. I use C, C++ or Python for these problems.
 
-My solutions can be found from Github: [vtorhonen/project-euler](https://github.com/vtorhonen/project-euler).
-
-# Stuff that I'm too lazy to write about
-
-There are too many.
+My solutions can be found from Github: [thevilledev/project-euler](https://github.com/thevilledev/project-euler).
