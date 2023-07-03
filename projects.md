@@ -4,6 +4,10 @@ title: Projects
 permalink: /projects/
 ---
 
+# Vault secrets plugin for Vercel
+
+I prefer ephemeral tokens but Vercel does not support them out-of-the-box. So I wrote [a plugin for Vault](https://github.com/thevilledev/vault-plugin-secrets-vercel).
+
 # Open source
 
 Whenever I have the time I contribute to Github projects I personally use and like. Very often a HashiCorp repository.
