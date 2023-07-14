@@ -6,7 +6,7 @@ permalink: /projects/
 
 # Vault secrets plugin for Vercel
 
-I prefer ephemeral tokens but Vercel does not support them out-of-the-box. So I wrote [a plugin for Vault](https://github.com/thevilledev/vault-plugin-secrets-vercel).
+I prefer ephemeral tokens but Vercel does not support them out-of-the-box. So I wrote a plugin for Vault called [vault-plugin-secrets-vercel](https://github.com/thevilledev/vault-plugin-secrets-vercel).
 
 # Open source
 
