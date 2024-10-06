@@ -17,21 +17,28 @@ ___  _|__|  | |  |   ____        __| _/_______  __
     <link rel="canonical" href="https://ville.dev/">
     <link rel="icon" type="image/png" href="/favicon.png">
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: rgb(253, 253, 253);
             color: #333;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
         }
         .container {
             text-align: center;
-            max-width: 600px;
+            max-width: 100%;
+            width: 100%;
             padding: 20px;
         }
         h1 {
@@ -43,7 +50,6 @@ ___  _|__|  | |  |   ____        __| _/_______  __
             margin-bottom: 20px;
         }
         .social-links {
-            margin-top: 30px;
         }
         .social-links a {
             color: #333;
@@ -51,8 +57,31 @@ ___  _|__|  | |  |   ____        __| _/_______  __
             margin: 0 10px;
             font-size: 1.2em;
         }
-        .social-links a:hover {
-            text-decoration: underline;
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .social-links a {
+                font-size: 1.1em;
+            }
+        }
+        .bio {
+            display: inline-block;
+            text-align: center;
+            max-width: 450px;
+        }
+        .bio::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0;
+            margin-bottom: 20px;
+        }
+        .wrap-after {
+            display: inline-block;
         }
         .svg-header{width:150px;height:150px;display:inline-block;}
         .svg-header.emblem{background-size:contain;background-repeat:no-repeat;background-position:center;background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4wLy9FTiIKImh0dHA6Ly93d3cudzMub3JnL1RSLzIwMDEvUkVDLVNWRy0yMDAxMDkwNC9EVEQvc3ZnMTAuZHRkIj4KPCEtLSBDcmVhdGVkIGJ5IEtlaXRoIFBhY2thcmQgLS0+CjxzdmcKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKICAgdmVyc2lvbj0iMS4wIgogICB4PSIwIgogICB5PSIwIgogICB3aWR0aD0iMTQwIgogICBoZWlnaHQ9IjE0MCIKICAgaWQ9ImdsaWRlciI+CiAgIAo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMCwxMCkiPgogICAgPGcgaWQ9InNjYWxlIiB0cmFuc2Zvcm09InNjYWxlKDIwLDIwKSI+Cgk8ZyBpZD0iZ3JpZCIgCnN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOi4xOyI+CgkgICAJPCEtLSBvdXRzaWRlIC0tPgoJCTxwYXRoIGQ9Im0gMCAwIEwgNiAwIEwgNiA2IEwgMCA2IFoiIC8+CgkgICAJCgkJPCEtLSBpbnNpZGUgLS0+CgkJPHBhdGggZD0iTSAwIDIgTCA2IDIiIC8+CgkJPHBhdGggZD0iTSAwIDQgTCA2IDQiIC8+CgkJCgkJPHBhdGggZD0iTSAyIDAgTCAyIDYiIC8+CgkJPHBhdGggZD0iTSA0IDAgTCA0IDYiIC8+Cgk8L2c+Cgk8ZyBpZD0iZG90cyIgc3R5bGU9ImZpbGw6IzAwMDAwMCI+CgkJPGVsbGlwc2UgY3g9IjMiIGN5PSIxIiByeD0iLjciIHJ5PSIuNyIgaWQ9IkMxIiAvPgoJCTxlbGxpcHNlIGN4PSI1IiBjeT0iMyIgcng9Ii43IiByeT0iLjciIGlkPSJDMiIgLz4KCQk8ZWxsaXBzZSBjeD0iMSIgY3k9IjUiIHJ4PSIuNyIgcnk9Ii43IiBpZD0iQzMiIC8+CgkJPGVsbGlwc2UgY3g9IjMiIGN5PSI1IiByeD0iLjciIHJ5PSIuNyIgaWQ9IkM0IiAvPgoJCTxlbGxpcHNlIGN4PSI1IiBjeT0iNSIgcng9Ii43IiByeT0iLjciIGlkPSJDNSIgLz4KCTwvZz4KICAgIDwvZz4KPC9nPgo8L3N2Zz4K)}
@@ -66,7 +95,7 @@ ___  _|__|  | |  |   ____        __| _/_______  __
     <div class="container">
         <i class="svg-header emblem"></i>
         <h1>ville vesilehto</h1>
-        <p>seasoned leader with expertise in cloud infrastructure, Kubernetes, open source, and product development, driving innovation across various industries.</p>
+        <p class="bio">seasoned leader with expertise in cloud infrastructure, Kubernetes, open source, and product development, driving innovation across various industries.</p>
         <div class="social-links">
             <a href="https://x.com/thevilledev"><i class="svg-icon xlogo"></i></a>
             <a href="https://github.com/thevilledev"><i class="svg-icon github"></i></a>
